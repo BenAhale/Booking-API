@@ -21,10 +21,13 @@ class DaysController < ApplicationController
     if @day.save
       time = @day.start_time.to_time
       while time < @day.end_time.to_time do
-        @day.slot.create(time: DateTime.parse(time.to_s), capacity: @day.slot_capacity)
+        @day.slots.create(time: DateTime.parse(time.to_s), capacity: @day.slot_capacity)
         time += @day.slot_length
       end
-      render json: @day, status: 201
+      render json: {
+        day: @day,
+        slots: @day.slots
+      }, status: 201
     else
       puts @day.errors.messages
       render json: {

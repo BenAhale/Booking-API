@@ -11,4 +11,10 @@ Rails.application.routes.draw do
     post '/create', to: 'days#create'
     delete '/:id', to: 'days#destroy'
   end
+
+  scope '/booking' do
+    get '/all', to: 'bookings#index'
+    get '/:id', to: 'bookings#show'
+    post '/create', to: 'bookings#create'
+  end
 end

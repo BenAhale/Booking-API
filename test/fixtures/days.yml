@@ -2,14 +2,14 @@
 
 one:
   date: 2021-04-21
-  start_time: 2021-04-21 20:59:22
-  end_time: 2021-04-21 20:59:22
+  start_time: 2021-04-21 21:47:37
+  end_time: 2021-04-21 21:47:37
   slot_length: 1
   slot_capacity: 1
 
 two:
   date: 2021-04-21
-  start_time: 2021-04-21 20:59:22
-  end_time: 2021-04-21 20:59:22
+  start_time: 2021-04-21 21:47:37
+  end_time: 2021-04-21 21:47:37
   slot_length: 1
   slot_capacity: 1
